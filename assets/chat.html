@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkboxes in a Box</title>
+    <style>
+        /* Styling the container box */
+        .checkbox-box {
+            border: 2px solid #000;  /* Border around the box */
+            padding: 10px;  /* Space inside the box */
+            width: 200px;  /* Width of the box */
+            margin: 20px;  /* Margin outside the box */
+        }
+
+        /* Optional: Styling each label */
+        label {
+            display: block;  /* Makes each label take a new line */
+            margin-bottom: 10px;  /* Space between labels */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Form with checkboxes inside a styled box -->
+<form action="/submit" method="POST">
+    <div class="checkbox-box">
+        <label>
+            <input type="checkbox" name="option1" value="yes">
+            Option 1
+        </label>
+
+        <label>
+            <input type="checkbox" name="option2" value="yes">
+            Option 2
+        </label>
+
+        <label>
+            <input type="checkbox" name="option3" value="yes">
+            Option 3
+        </label>
+    </div>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
